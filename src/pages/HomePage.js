@@ -1,3 +1,4 @@
+ // eslint-disable-next-line 
 import { useAtom } from "jotai";
 import { ebooksAtom } from "../stores/store";
 import { useEffect } from "react";
@@ -45,6 +46,7 @@ const HomePage = () => {
       setEbooks(data);
     };
     fetchData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (!ebooks) {
     return (

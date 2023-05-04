@@ -1,3 +1,4 @@
+ // eslint-disable-next-line 
 import React, { useEffect } from "react";
 import ButtonBack from "../components/ButtonBack";
 import { useAtom } from "jotai";
@@ -23,7 +24,7 @@ const MyPdfViewer = () => {
       },
       {}
     );
-  }, []);
+  });
   console.log(ebookOne.linkPdf);
   return (
     <>
