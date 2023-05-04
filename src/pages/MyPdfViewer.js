@@ -7,7 +7,7 @@ import { ebookOneAtom } from "../stores/store";
 const MyPdfViewer = () => {
   const [ebookOne] = useAtom(ebookOneAtom);
   useEffect(() => {
-    const clientId = "af710d6dee7944d9b4c05adbd88edf1f";
+    const clientId = "0e1669d8ec934aea8193a02843c04855";
     const adobeDCView = new window.AdobeDC.View({
       clientId: clientId,
       divId: "adobe-dc-view",

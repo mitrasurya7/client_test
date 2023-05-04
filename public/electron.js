@@ -1,35 +1,31 @@
-const electron = require("electron");
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
-const screen = electron.screen;
+const { app, BrowserWindow } = require('electron')
 
-let mainWindow;
-
-function createWindow() {
-  const { width, height } = screen.getPrimaryDisplay().workAreaSize;
-  mainWindow = new BrowserWindow({
-    width: width,
-    height: height,
-    autoHideMenuBar: true,
-
+function createWindow () {
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    autoHideMenuBar:true,
     webPreferences: {
       nodeIntegration: true,
-    },
-  });
-  mainWindow.loadURL("http://localhost:3000");
-  mainWindow.on("closed", () => (mainWindow = null));
+      enableRemoteModule: true
+    }
+  })
+
+  win.loadURL('https://eistclient.web.app')
 }
 
-app.on("ready", createWindow);
+app.whenReady().then(() => {
+  createWindow()
 
-app.on("window-all-closed", () => {
-  if (process.platform !== "win32") {
-    app.quit();
-  }
-});
+  app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) {
+      createWindow()
+    }
+  })
+})
 
-app.on("activate", () => {
-  if (mainWindow === null) {
-    createWindow();
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit()
   }
-});
+})
