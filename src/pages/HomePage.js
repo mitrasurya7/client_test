@@ -45,6 +45,7 @@ const HomePage = () => {
       setEbooks(data);
     };
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (!ebooks) {
     return (
