@@ -16,7 +16,7 @@ function createWindow() {
       nodeIntegration: true,
     },
   });
-  mainWindow.loadURL("http://localhost:3001");
+  mainWindow.loadURL("http://localhost:3000");
   mainWindow.on("closed", () => (mainWindow = null));
 }
 
