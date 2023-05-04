@@ -24,8 +24,9 @@ const MyPdfViewer = () => {
       },
       {}
     );
-  });
-  console.log(ebookOne.linkPdf);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <>
       <div id="adobe-dc-view" className="h-screen"></div>
