@@ -10003,6 +10003,11 @@ w3c-xmlserializer@^2.0.0:
   dependencies:
     xml-name-validator "^3.0.0"
 
+wait-for-localhost@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/wait-for-localhost/-/wait-for-localhost-4.0.1.tgz"
+  integrity sha512-/q7fnGj3ATD4myCqlH3ZB/soX3cFZAztMvZgxOv0bZ7+8MsBUQrxIVrUkLsmro0qZAI5L9/QLGhJ0RsTfCmIbQ==
+
 wait-on@^7.0.1:
   version "7.0.1"
   resolved "https://registry.npmjs.org/wait-on/-/wait-on-7.0.1.tgz"

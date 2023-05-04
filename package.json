@@ -28,10 +28,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron-dev": "concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "dev": "concurrently \"npm start\" \"wait-on http://127.0.0.1:3000 && electron .\"",
     "electron-pack": "electron-builder",
-    "preelectron-pack": "npm run build",
-    "postelectron-pack": "rmdir /s /q dist && robocopy .\\build\\win-unpacked .\\dist /E /MOVE"
+    -
   },
   "build": {
     "appId": "com.example.myapp",
