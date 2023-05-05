@@ -15,4 +15,9 @@ gunakan <b>npm run dev</b> atau <b>yarn dev</b>
 
 untuk aplikasi bisa dijalankan di Test app.exe
 
+Terdapat 2 role user dan admin
+
+1. username : admin, password: admin
+2. username : user, password: user
+
 
