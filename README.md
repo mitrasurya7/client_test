@@ -20,4 +20,8 @@ Terdapat 2 role user dan admin
 1. username : admin, password: admin
 2. username : user, password: user
 
+Link file exe
+
+https://x6t2.c10.e2-2.dev/s3bucket/My%20App%20Setup%200.1.0.exe
+
 
